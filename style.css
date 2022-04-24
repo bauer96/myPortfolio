@@ -56,8 +56,29 @@ li a {
     }
 .about-me {
     text-align: center;
-    color: #eee;
+    background-color: #eee;
+    color: #232931;
+    
 }
+.about-me h2 {
+    color: #232931;
+}
+
+
+.project {
+   
+    background-color: #232931;
+    color: #eee;
+    text-align: center;
+   
+}
+
+.project h2 {
+    background-color: #232931;
+    color: #eee;
+    
+}
+
 
 p {
     font-size: 20px;
@@ -72,8 +93,9 @@ p {
 
 
 footer {
-    color: #eee;
+    background-color: #232931;
     text-align: center;
+    color:#eee;
 }
 
 
