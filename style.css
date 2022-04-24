@@ -16,7 +16,7 @@ h2 {
 }
 
 
-ul {
+.nav-list {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -25,7 +25,7 @@ ul {
     margin-top: 15px;
 }
 
-li {
+.nav-list li {
     float: right;
 }
 
@@ -59,12 +59,22 @@ li a {
     color: #eee;
 }
 
+p {
+    font-size: 20px;
+    font-style: bold;
+}
+
 
 
 .owner-footer {
     color: #4ECCA3;
 }
+
+
 footer {
     color: #eee;
     text-align: center;
 }
+
+
+
