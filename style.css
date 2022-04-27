@@ -176,7 +176,7 @@ footer {
         .images img {
           width: 100%;
           height: auto;
-          margin-bottom: 25vh;
+          margin-bottom: 13vh;
           margin-left: auto;
         }
         .hero a {
@@ -185,7 +185,8 @@ footer {
             
         }
       }
-  @media screen and (max-width: 428px) {
+  @media screen and (device-width: 428px) 
+  and (device-height: 926px)  {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
