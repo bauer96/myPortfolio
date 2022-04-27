@@ -185,8 +185,8 @@ footer {
             
         }
       }
-  @media screen and (device-width: 428px) 
-  and (device-height: 926px)  {
+  @media screen and (max-width: 480px) 
+{
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
@@ -195,10 +195,11 @@ footer {
       margin-top: 15px;
       display: block;
     }
+   
       .images img {
-        width: 100%;
-        height: auto;
-        margin-bottom: 25vh;
+          width: 75%;
+       height: auto;
+        margin-bottom: 20vh;
         margin-left: auto;
       }
       .hero a {
