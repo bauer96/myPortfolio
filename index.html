@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+
     <title>myPortfolio</title>
 </head>
 <body>
@@ -44,26 +45,54 @@
     <div class="about-me">
         <p>I am 26 Years old and learn actually the FullStackPath on CodeCademy.</p>
         <p>At the Moment i learn the basics of modern Web-Development</p>
-        <h2>Here can you see my Skillset:</h2>
-        <p>HTML 5</p>
-        <p>CSS 3</p>
-        <p>JavaScript</p>
-        <br>
+    </div>
+        <div class="row">
+            <h2>My Skillset:</h2>
+            <div class="column">
+                <div class="card">
+                    <h3>HTML 5</h3>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <h3>CSS 3</h3>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <h3>Javascript</h3>
+                </div>
+            </div>
 </div>
-<div class="project">
+<div class="row-project">
 <h2>Project</h2>
-<div class="project-one">
-    <p>One</p>
-    <h3>Random Quote Generator - getQuote</h3>
-    <p>a simple quote generator when you press the button getQuote </p>
-
-    
+<div class="column-project">
+    <div class="card-project">
+        
+        <img class="getQuote"src="ressoures/img/getQuote.png" alt="">
+        <h3>Project One</h3>
+        <p>Random Quote Generator - getQuote</p>
+        <p>a simple quote generator when you press the button getQuote </p>
+        <a class="github-link" href="https://github.com/bauer96/getQuote">check Github</a>
+    </div>
 </div>
-</div>
-
-
+<div class="column-project">
+    <div class="card-project-1">
+        <h3>Project Two</h3>
+        <p>Next Project in Progress..</p>
   
+       
+    </div>
+</div>
+</div>
+
+
+  <br>
     <footer>
+        <br>
+        <a href="https://github.com/bauer96"><img  class="social" src="ressoures/img/github_neu.png" alt=""></a>
+       <br>
+       <br>
         Made with Code in Hamburg by
         <span class="owner-footer">Hannes Bauer</span>
         <p class="copyright">myPortfolio © 2022</p>
