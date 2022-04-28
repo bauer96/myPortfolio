@@ -11,21 +11,33 @@
     <title>myPortfolio</title>
 </head>
 <body>
-   
-        <div class="topnav" id="myTopnav">
-            <nav>
-            <ul>
-                <img src="ressoures/img/IMG_2029.PNG" class="logo">
-          
-            <a href="#contact">Contact</a>
-            <a href="#project">Project</a>
-            <a href="#about-me">About</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
+<!-- new Navbar with Logo and Burger Menu here -->
+    <nav class="navbar">
+        <div class="logo-div">
+            <a href="">
+                <img class="logo" src="ressoures/img/logo_hnsb.png" alt="logo Website">
             </a>
+        </div>
+        <ul class="nav-list" id="navList">
+            <li class="list-item">
+                <a href="#">About</a>
+            </li>
+            <li class="list-item">
+                <a href="#">Project</a>
+            </li>
+            <li class="list-item">
+                <a href="#">Contact</a>
+            </li>
         </ul>
+        <div class="menu" id="toogle-button">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            </div>
+        </div>
     </nav>
-          </div>
+
+   
 <div class="hero">
     <h1>HI, I'am <span>Hannes</span></h1>
         <p>This is myPortfolio Website
@@ -43,8 +55,14 @@
 <br>
 <br>
     <div class="about-me">
-        <p>I am 26 Years old and learn actually the FullStackPath on CodeCademy.</p>
-        <p>At the Moment i learn the basics of modern Web-Development</p>
+       
+        <div class="column-about-me">
+            <div class="card-about-me">
+                <h2>I am 26 Years old and learn actually the FullStackPath on CodeCademy.</h2>
+                <p>At the Moment i learn the basics of modern Web-Development</p>
+            </div>
+        </div>
+       
     </div>
         <div class="row">
             <h2>My Skillset:</h2>
