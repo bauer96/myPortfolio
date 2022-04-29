@@ -147,7 +147,7 @@ color: #4ECCA3;
 .images {
     margin-bottom: 170px;
     height: 60%;
-    width: 55%;
+    width: 50%;
     position: absolute;
     bottom: 0;
     right: 100px;
@@ -159,7 +159,7 @@ color: #4ECCA3;
    height: 100%;
     position: absolute;
     left: 50%;
-    top: 85%;
+   
     
     transform: translateX(-50%);
    
@@ -355,6 +355,7 @@ footer {
         height: auto;
         margin-bottom: 10vh;
         margin-left: auto;
+        top: 80%;
       }
       .hero a {
           opacity: 0;
@@ -426,6 +427,15 @@ footer {
         margin-top: 15%;
         height: auto;
     }
+}
+@media screen and (min-width: 600px) {
+    .images img {
+        width: 75%;
+       height: auto;
+        margin-bottom: 10vh;
+        margin-left: auto;
+      }
+      
 }
 @media screen and (max-width: 360px) {
     .column-project {
