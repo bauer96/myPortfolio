@@ -343,14 +343,7 @@ footer {
       }
   @media screen and (max-width: 480px) 
 {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      margin-right: -2.5px;
-      font-size: 35px;
-      margin-top: 15px;
-      display: block;
-    }
+   
    
       .images img {
           width: 75%;
@@ -366,14 +359,7 @@ footer {
     }
       @media screen and (max-width: 428px) 
 {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      margin-right: -2.5px;
-      font-size: 35px;
-      margin-top: 15px;
-      display: block;
-    }
+    
    
       .images img {
           width: 75%;
