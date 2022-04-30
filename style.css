@@ -324,7 +324,7 @@ footer {
           margin-left: auto;
         }
         .hero-me a {
-            opacity: 0;
+            opacity: 1;
             margin-top: 3rem;
             
         }
@@ -338,7 +338,7 @@ footer {
         margin-left: auto;
       }
       .hero-me a {
-          opacity: 0;
+          opacity: 1;
           margin-top: 3rem;
           
       }
@@ -353,7 +353,7 @@ footer {
         top: 80%;
       }
       .hero-me a {
-          opacity: 0;
+          opacity: 1;
           margin-top: 3rem;
       }
 
@@ -374,7 +374,7 @@ footer {
             margin-left: auto;
           }
           .hero-me a {
-              opacity: 0;
+              opacity: 1;
               margin-top: 3rem;
               
           }
