@@ -1,3 +1,7 @@
+function toogleMobileMenu(menu) {
+    menu.classList.toggle('open');
+} 
+
 
 const icon = document.getElementById('moon-icon');
 
@@ -11,3 +15,4 @@ icon.onclick = function() {
        
     }
 }
+

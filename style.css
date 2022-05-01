@@ -27,93 +27,132 @@ h2:hover {
 }
 
 
-nav {
-    background-color: #232931;
-    color: #000;
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    
-    
-}
-nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 10px 30px;
-}
-nav ul {
-    flex: 1;
-    text-align: right;
-}
-nav ul li a {
-    color:#43CCA3;
+header a {
     text-decoration: none;
-    font-size: 25px;
-    font-weight: bold;
 }
 
-nav ul li a:hover{
-   color: #eee;
+header {
+    padding: 0 20px;
+    background-color: #ffffff;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+#brand-logo {
+    
+    align-items: center;
 }
 .logo {
     width: 50px;
-    margin-left: 25px;
-
+   
 }
+
+ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ul a {
+    color: #43CCA3;
+    font-weight: bold;
+    font-size: 25px;
+    
+}
+ul a:hover {
+    color: #eee;
+}
+
+ul li {
+    padding: 5px;
+    margin-left: 10px;
+    margin-bottom: 35px;
+}
+
+ul li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+#hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+}
+#hamburger-icon div {
+width: 35px;
+height: 3px;
+background-color: #232931;
+margin: 6px 0;
+transition: 0.4s;
+}
+
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+    opacity: 0;
+}
+
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+}
+.mobile-menu li {
+    margin-bottom: 10px;
+}
+
+
+#brand-logo {
+    width: 50px;
+    margin-left: 25px;
+}
+
   #moon-icon {
       width: 30px;
       cursor: pointer;
-      margin-top: 5px;
-      margin-right: 15px;
+      margin: 10px 0 10px 5px;
   }
 
-
-
-  @media screen and (max-width: 480px) {
-      .navbar {
-          flex-direction: column;
-      }
-      .menu {
-          display: block;
-          position: absolute;
-          right: 15px;
-          top: 15px;
-      }
-      .logo-div {
-        width: 100%;
-        margin-left: 5px;
-        margin-top: 10px;
-      }
-  }
-  @media screen and (min-width: 481px) and (max-width: 600px) {
-    .navbar {
-        flex-direction: column;
-    }
-    .menu {
-        display: block;
-        position: absolute;
-        right: 15px;
-        top: 15px;
-    }
-}
  
 .hero-me {
-    margin-left: 10%;
-    margin-top: 5%;
+    margin-left: 8%;
+    margin-top: 13%;
 }
 
 .hero-me h1 {
-    font-size: 50px;
-    margin-bottom: 20px;
-   color: #000;
+font-size: 50px;
+margin-bottom: 20px;
+color: #000;
 }
+
 span {
     color:#43CCA3;
 }
 
 .hero-me p {
-  color: #000;
-    line-height: 22px;
+color: #000;
+line-height: 22px;
 }
 
 .hero-me a {
@@ -132,27 +171,20 @@ span {
     color:#43CCA3;
 }
 
-
 .images {
-    margin-bottom: 170px;
-    height: 60%;
-    width: 50%;
+   width: 45%;
+   height: 80%;
     position: absolute;
     bottom: 0;
     right: 100px;
 }
-
-
-
- .images img   {
-   height: 100%;
+.images img {
+    height: 100%;
     position: absolute;
     left: 50%;
-   
-    
-    transform: translateX(-50%);
-   
+    bottom: 0;
 }
+
 
 /* About Me Sektion */ 
 
@@ -160,7 +192,7 @@ span {
 .about-me {
     text-align: center;
     width: 100%;
-    padding: 0 10px;
+   
     color:#000000;
 }
 
@@ -192,8 +224,8 @@ span {
 .column {
     float: left;
     width: 25%;
-    padding: 0 10px;
-    margin-left: 5%;
+     
+    margin-left: 120px;
 }
 
 .row {
@@ -211,7 +243,9 @@ span {
     padding: 16px;
     text-align: center;
     background-color: #000;
-    border-radius: 15px;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
    
 }
 .card:hover {
@@ -221,6 +255,8 @@ span {
 
 .card h3 {
     color: #43CCA3;
+    margin-top: 80px;
+    margin-left: 10px;
 }
 /* Project Sektion */ 
 
@@ -243,8 +279,9 @@ span {
     padding: 16px;
     height: 300px;
    
-   
-   
+}
+.project-h3 {
+    color: #43CCA3;
 }
 
 .getQuote {
@@ -315,6 +352,84 @@ footer {
 
 /* Media Queries */ 
 
+@media only screen and (max-width: 600px) { 
+    header nav {
+        display: none;
+    }
+    #hamburger-icon {
+        display: block;
+    }
+    #moon-icon {
+        width: 30px;
+        cursor: pointer;
+        margin: 10px 0 10px 75px;
+    }
+     #brand-logo {
+    width: 50px;
+    margin-top: 2.5px;
+    margin-left: 5px;
+}
+.logo {
+    width: 45px;
+}
+
+
+    .hero-me {
+        margin-top: 30%;
+    }
+    .hero-me a {
+        margin-top: 50%;
+        margin-left: 38%;
+    }
+
+    .images img {
+        width: 100%;
+        height: auto;
+        margin-top: 15px;
+        left: -15%;
+      }
+      .card-about-me {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        height: auto;
+       margin-top: 10px;
+    }
+
+      .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+        margin-left: 28%;
+        padding: 15px;
+      
+    }
+    .card h3 {
+        color: #43CCA3;
+        margin-top: 80px;
+        margin-right: 10px;
+    }
+    .column-project {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+        margin-left: -1.5%;
+    }
+    .getQuote {
+        width: 70%;
+        margin-bottom: 20px;
+    
+    }
+    .card-project {
+        text-align: center;
+        height: auto;
+    }
+  
+    .card-project-1 {
+        margin-top: 15%;
+        height: auto;
+    }
+}
+
   @media screen and (max-width: 390px) {
   
         .images img {
@@ -361,37 +476,9 @@ footer {
           width: 90%;
       }
       
-     
+    }
 
-    } @media only screen and (max-width: 600px) 
-    {
-       
-       
-          .images img {
-            width: 75%;
-           height: auto;
-            margin-bottom: 10vh;
-            margin-left: auto;
-          }
-          .hero-me a {
-              opacity: 1;
-              margin-top: 3rem;
-              
-          }
-        }
-  
-  
-   
-
-  @media screen and (max-width: 600px) {
-      .column {
-          width: 100%;
-          display: block;
-          margin-bottom: 20px;
-          margin-left: -1.5%;
-      }
-  }
-  @media screen and (max-width: 360px) {
+@media screen and (max-width: 360px) {
     .column {
         width: 95%;
         display: block;
@@ -399,58 +486,26 @@ footer {
         margin-left: 0.25px;
        
     }
+    .column-project {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+        margin-left: -1.5%;
+    }
+    .getQuote {
+        width: 100%;
+        margin-bottom: 20px;
+    
+    }
+    .card-project {
+        text-align: center;
+        height: auto;
+    }
+  
+    .card-project-1 {
+        margin-top: 15%;
+        height: auto;
+    }
 }
 
-  @media screen and (max-width: 600px) {
-    .column-project {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
-        margin-left: -1.5%;
-    }
-    .getQuote {
-        width: 100%;
-        margin-bottom: 20px;
-    
-    }
-    .card-project {
-        text-align: center;
-        height: auto;
-    }
-  
-    .card-project-1 {
-        margin-top: 15%;
-        height: auto;
-    }
-}
-@media screen and (min-width: 600px) {
-    .images img {
-        width: 75%;
-       height: auto;
-        margin-bottom: 10vh;
-        margin-left: auto;
-      }
-      
-}
-@media screen and (max-width: 360px) {
-    .column-project {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
-        margin-left: -1.5%;
-    }
-    .getQuote {
-        width: 100%;
-        margin-bottom: 20px;
-    
-    }
-    .card-project {
-        text-align: center;
-        height: auto;
-    }
-  
-    .card-project-1 {
-        margin-top: 15%;
-        height: auto;
-    }
-}
+

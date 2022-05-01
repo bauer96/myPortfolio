@@ -12,35 +12,55 @@
 </head>
 <body>
 <!-- new Navbar with Logo and Burger Menu here -->
- <div class="hero">
-     <nav class ="nav-bar" id="navbar">
-        <a href=""><img src="ressoures/img/graph_neu.png" class="logo"></a>
-         <ul>
-             <li><a href="">About</a></li>
-             <li><a href="">Project</a></li>
-             <li><a href="">Contact</a></li>
-         </ul>
-         <img src="ressoures/img/sun.png" id="moon-icon">
-        
-     </nav>
- </div>
+<header>
+    
+    <div id="brand-logo">
+      
+    <a href=""><img src="ressoures/img/graph_neu.png" class="logo"></a></div>
+    <nav>
+        <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">Project</a></li>
+            <li><a href="">Contact</a></li>
+            
+        </ul>
+       
+    </nav>
+    <img src="ressoures/img/sun.png" id="moon-icon">
+    <div id="hamburger-icon" onclick="toogleMobileMenu(this)">
+       
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">Contact</a></li>
+           
+        </ul>
+       
+    </div>
+   
+</header>
+
+   
+
 
    
 <div class="hero-me">
     <h1>HI, I'am <span>Hannes</span></h1>
-        <p>This is myPortfolio Website
-        <br> enjoy my work
-    </p>
+        <p>This is <span>myPortfolio </span>Website</p>
+        <p> enjoy my work</p>
     <a href="#">Contact Me</a>
 </div>
+<div class="images">
+    <img src="ressoures/img/graph_neu.png" class="shape"> 
+  <img src="ressoures/img/IMG_2029.PNG" class="Memoji">
+         </div>
 
-
-<br>
-<br>
-<br>
-<br>
     <div class="about-me">
-       
+      
+     
         <div class="column-about-me">
             <div class="card-about-me">
                 <h2>I am 26 Years old and learn actually the FullStackPath on CodeCademy.</h2>
@@ -73,7 +93,7 @@
     <div class="card-project">
         
         <img class="getQuote"src="ressoures/img/getQuote.png" alt="">
-        <h3>Project One</h3>
+        <h3 class="project-h3">Project One</h3>
         <p>Random Quote Generator - getQuote</p>
         <p>a simple quote generator when you press the button getQuote </p>
         <a class="github-link" href="https://github.com/bauer96/getQuote">check Github</a>
