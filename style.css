@@ -12,6 +12,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
+    
 }
 
 
@@ -587,82 +589,85 @@ footer {
         }
 }
 
-@media only screen and (min-width: 844px) and (orientation: portrait)
-{ 
-    header nav {
-        display: none;
-    }
-    #hamburger-icon {
-        display: block;
-    }
-    #moon-icon {
-        width: 30px;
-        cursor: pointer;
-        margin: 10px 0 10px 75px;
-    }
-        #brand-logo {
-    width: 50px;
-    margin-top: 2.5px;
-    margin-left: 5px;
-    }
-    .logo {
-    width: 45px;
-    }
-
-    .hero-me {
-        margin-top: 40%;
-    }
-    .hero-me a {
-        margin-top: 45%;
-        margin-left: 31%;
-    }
-
-    .images img {
-        width: 100%;
-        height: auto;
-        left: -5%;
-        margin-bottom: 50%;
-    }
-    .card-about-me {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        padding: 20px;
-        height: auto;
-    margin-top: 5px;
-    }
-
-    .column {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
-        margin-left: 21%;
-        padding: 15px;
+@media only screen 
+    and (device-width: 428px) 
+    and (device-height: 926px) 
+    and (-webkit-device-pixel-ratio: 3) { 
+        header nav {
+            display: none;
+        }
+        #hamburger-icon {
+            display: block;
+        }
+        #moon-icon {
+            width: 30px;
+            cursor: pointer;
+            margin: 10px 0 10px 75px;
+        }
+            #brand-logo {
+        width: 50px;
+        margin-top: 2.5px;
+        margin-left: 5px;
+        }
+        .logo {
+        width: 45px;
+        }
     
-    }
-    .card h3 {
-        color: #43CCA3;
-        margin-top: 80px;
-        margin-right: 10px;
-    }
-    .column-project {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
-        margin-left: -1.5%;
-    }
-    .getQuote {
-        width: 70%;
-        margin-bottom: 20px;
+        .hero-me {
+            margin-top: 40%;
+        }
+        .hero-me a {
+            margin-top: 45%;
+            margin-left: 31%;
+        }
     
-    }
-    .card-project {
-        text-align: center;
-        height: auto;
-    }
+        .images img {
+            width: 100%;
+            height: auto;
+            left: -5%;
+            margin-bottom: 50%;
+        }
+        .card-about-me {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            height: auto;
+        margin-top: 5px;
+        }
+    
+        .column {
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+            margin-left: 21%;
+            padding: 15px;
+        
+        }
+        .card h3 {
+            color: #43CCA3;
+            margin-top: 80px;
+            margin-right: 10px;
+        }
+        .column-project {
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+            margin-left: -1.5%;
+        }
+        .getQuote {
+            width: 70%;
+            margin-bottom: 20px;
+        
+        }
+        .card-project {
+            text-align: center;
+            height: auto;
+        }
+    
+        .card-project-1 {
+            margin-top: 15%;
+            height: auto;
+        }
+     }
 
-    .card-project-1 {
-        margin-top: 15%;
-        height: auto;
-    }
- }
 
 
