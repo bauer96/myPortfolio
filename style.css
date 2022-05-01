@@ -430,82 +430,86 @@ footer {
     }
 }
 
-  @media screen and (max-width: 390px) {
-  
-        .images img {
-          width: 100%;
-          height: auto;
-          margin-bottom: 13vh;
-          margin-left: auto;
+
+
+      @media only screen and (max-width: 425px) 
+    {
+        header nav {
+            display: none;
+        }
+        #hamburger-icon {
+            display: block;
+        }
+        #moon-icon {
+            width: 30px;
+            cursor: pointer;
+            margin: 10px 0 10px 75px;
+        }
+            #brand-logo {
+        width: 50px;
+        margin-top: 2.5px;
+        margin-left: 5px;
+        }
+        .logo {
+        width: 45px;
+        }
+
+        .hero-me {
+            margin-top: 40%;
         }
         .hero-me a {
-            opacity: 1;
-            margin-top: 3rem;
-            
+            margin-top: 45%;
+            margin-left: 31%;
         }
-      }
-  @media screen and (max-width: 480px) 
-{
-      .images img {
-          width: 75%;
-        height: auto;
-        margin-bottom: 10vh;
-        margin-left: auto;
-      }
-      .hero-me a {
-          opacity: 1;
-          margin-top: 3rem;
-          
-      }
-    }
-      @media only screen and (max-width: 428px) 
-{
-      .images img {
-          width: 75%;
-        height: auto;
-        margin-bottom: 10vh;
-        margin-left: auto;
-        top: 80%;
-      }
-      .hero-me a {
-          opacity: 1;
-          margin-top: 3rem;
-      }
 
-      .card {
-          width: 90%;
-      }
-      
-    }
+        .images img {
+            width: 100%;
+            height: auto;
+            left: -5%;
+            margin-bottom: 50%;
+        }
+        .card-about-me {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            height: auto;
+        margin-top: 5px;
+        }
 
-@media screen and (max-width: 360px) {
-    .column {
-        width: 95%;
-        display: block;
-        margin-bottom: 20px;
-        margin-left: 0.25px;
-       
-    }
-    .column-project {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
-        margin-left: -1.5%;
-    }
-    .getQuote {
-        width: 100%;
-        margin-bottom: 20px;
+        .column {
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+            margin-left: 21%;
+            padding: 15px;
+        
+        }
+        .card h3 {
+            color: #43CCA3;
+            margin-top: 80px;
+            margin-right: 10px;
+        }
+        .column-project {
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+            margin-left: -1.5%;
+        }
+        .getQuote {
+            width: 70%;
+            margin-bottom: 20px;
+        
+        }
+        .card-project {
+            text-align: center;
+            height: auto;
+        }
     
-    }
-    .card-project {
-        text-align: center;
-        height: auto;
-    }
-  
-    .card-project-1 {
-        margin-top: 15%;
-        height: auto;
-    }
+        .card-project-1 {
+            margin-top: 15%;
+            height: auto;
+        }
 }
+
+
 
 
